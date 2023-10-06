@@ -1,0 +1,560 @@
+/* 
+Template Name: Flower Shop
+Template URL: https://darkcorner.inc
+Description: Flower Shop - CSS only Responsive template
+    Author Name: Sad Abdullah
+    Author Website: 
+    Version: 1.0
+
+------------ table of contents ---------- ///
+
+1. Reset CSS style 
+-----------
+
+    1.1 General
+    1.2 Root style
+    1.3 Typography
+    1.4 Buttons
+
+2. Navbar
+3. Header
+4. Features
+5.Key-services
+6.Hot deal
+7.Advertise
+8.Instagram
+9 Call to Action
+10 Footer
+
+11. Responsive
+-----------------
+
+    11.1 Large devices (desktops)
+    11.2 Medium devices (tablets)
+    11.3 Small devices (landscape phones)
+    11.4 Extra small devices (portrait phones)
+
+
+-----------------------
+            1. Reset CSS style
+------------------------------------------------ */
+/* -------- 1.1 General --------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto; 
+}
+
+
+
+/* -------- 1.2 Root style --------- */
+
+:root {
+    --primary-color: #E55473;
+    --secondary-color: #111010;
+    --border-color: #ddd;
+    --bg-primary: #fceef1;
+    --bg-secondary: #fff;
+    --footer-bg: #111010;
+    --img-box-bg: rgba(167, 33, 98, 0.15);
+    --heading-color: #272727;
+    --link-color: #272727;
+    --text-color: rgba(39, 39, 39, 0.60);
+    --heading-font: 'Lato', sans-serif;
+    --body-font: 'Lato', sans-serif;
+}
+
+
+
+/* -------- 1.3 Typography --------- */
+
+.section-title {
+    color: var(--heading-color);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 26px;
+}
+
+.section-description {
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+
+
+/* -------- 1.4 Buttons --------- */
+
+.primary-btn {
+    background: var(--primary-color);
+    color: var(--bg-secondary);
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 20px 43px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.primary-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--bg-secondary);
+}
+
+
+
+/* ---------------
+            2.Navbar CSS style
+------------------------------------------------ */
+/* ------------- Navbar area --------- */
+
+nav {
+    padding: 10px 0;
+    background-color: var(--bg-primary);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo img {
+    width: 65px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    text-transform: capitalize;
+    display: block;
+    padding: 12px 19px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-secondary);
+}
+
+nav ul li .fa-solid {
+    color: var(--secondary-color);
+    font-size: 19px;
+    display: inline-block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+
+/* ---------------
+            3.Header CSS style
+------------------------------------------------ */
+/* ------------- Header area --------- */
+
+header {
+    background-color: var(--bg-primary);
+}
+
+.header-container {
+    display: flex;
+    gap: 96px;
+    align-items: center;
+}
+
+.header-title {
+    color: var(--heading-color);
+    font-size: 65px;
+    font-weight: 800;
+    margin-top: -25px;
+}
+
+#header-description {
+    margin: 39px 0 32px;
+    
+}
+
+.header-img img {
+    width: 535px;
+    height: auto;
+}
+
+
+
+/* ----------------
+            4.Features CSS style
+------------------------------------------------ */
+/* ------------ Features area --------- */
+
+.features {
+    padding: 126px 0;
+}
+
+
+#features-description,
+#insta-description,
+#action-description,
+#footer-description {
+    width: 594px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+
+.features-content-box {
+    width: 33%;
+    text-align: center;
+}
+
+
+.freatures-img-1 {
+    padding: 96px 26px 0;
+    border-radius: 50% 50% 0 0;
+    background: var(--img-box-bg);
+}
+
+.freatures-img-1 img {
+    width: 88%;
+    height: 356px;
+    display: block;
+    margin: 0 auto;
+}
+
+.freatures-img-2 {
+    padding: 96px 26px 0;
+    border-radius: 50% 50% 0 0;
+    background: var(--img-box-bg);
+}
+
+.freatures-img-2 img {
+    width: 100%;
+    height: 356px;
+    display: block;
+    margin: 0 auto;
+}
+
+.freatures-img-3 {
+    padding: 96px 16px 0;
+    border-radius: 50% 50% 0 0;
+    background: var(--img-box-bg);
+}
+
+.freatures-img-3 img {
+    width: 90%;
+    height: 356px;
+    display: block;
+    margin: 0 auto;
+}
+
+.features-link {
+    color: var(--link-color);
+    display: inline-block;
+    margin-top: 32px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35px;
+    text-decoration: none;
+}
+
+.features-link:hover {
+    text-decoration: underline;
+}
+
+
+
+/* ------------------
+            5.Key-services CSS style
+------------------------------------------------ */
+/* ------------- Key-services area --------- */
+
+.key-service {
+    padding-bottom: 96px;
+}
+
+.key-service-container {
+    padding: 86px 56px;
+    background-color: var(--bg-primary);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.key-service-column {
+    text-align: center;
+}
+
+.key-service-column img {
+    width: 86px;
+    height: auto;
+}
+
+.key-service-column .key-service-txt {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 35px;
+    margin-top: 24px;
+}
+
+
+
+/* -----------------
+            6.Hot deal CSS style
+------------------------------------------------ */
+/* ----------- Hot deal area --------- */
+
+.hot-deal {
+    padding-bottom: 126px;
+}
+
+.hot-deal-container {
+    display: flex;
+    gap: 56px;
+    align-items: center;
+}
+
+.hot-deal-img img {
+    width: 319px;
+    height: auto;
+}
+
+.hot-deal-txt {
+    text-align: center;
+    padding: 56px 76px;
+}
+
+.hot-deal-txt .hot-deal-hurry {
+    font-family: 'Tangerine';
+    font-weight: 700;
+    font-size: 49px;
+    margin-bottom: 16px;
+}
+
+.hot-deal-counter {
+    margin: 29px 36px;
+    display: flex;
+    gap: 29px;
+    justify-content: center;
+}
+
+.counter-column {
+    padding: 16px 26px;
+    border: 1px solid var(--border-color);
+}
+
+.counter-column .counter-headline {
+    font-size: 36px;
+    margin-bottom: 6px;
+}
+
+.counter-column .counter-txt {
+    font-size: 14px;
+    color: var(--heading-color);
+}
+
+
+
+/* ----------------
+            7.Advertise CSS style
+------------------------------------------------ */
+/* ----------- Advertise area --------- */
+
+.advertise {
+    padding: 100px 0;
+    background-color: var(--bg-primary);
+}
+
+.advertise-container {
+    display: flex;
+    gap: 219px;
+    align-items: center;
+}
+
+.advertise-info {
+    text-align: center;
+}
+
+.advertise-info .section-description {
+    padding: 0 76px;
+    margin-bottom: 36px;
+}
+
+
+.advertise-img img {
+    width: 318px;
+    height: auto;
+}
+
+
+
+/* -----------------
+            8.Instagram CSS style
+------------------------------------------------ */
+/* ----------- Instagram area --------- */
+
+.instagram {
+    padding: 126px 0;
+}
+
+.instagram-container {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+
+}
+
+.instagram-column img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* -------------------
+            9 Call to Action CSS style
+------------------------------------------------ */
+/* ----------- Call to Action area --------- */
+
+.call-to-action {
+    padding-bottom: 126px;
+}
+
+.action-container {
+    padding: 126px 256px;
+    background-image: url('../images/Rectangle\ 9.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.action-form input[type="email"]{
+    width: 72%;
+    color: var(--text-color);
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 22px 26px;
+    border-radius: 8px;
+    background: var(--bg-secondary);
+    display: inline-block;
+    margin-right: 3%;
+    border: none;
+}
+
+.action-form input[type="submit"]{
+    width: 24%;
+    background: var(--primary-color);
+    color: var(--bg-secondary);
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 20px 43px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.action-form input[type="submit"]:hover{
+    background-color: var(--footer-bg);
+    color: var(--bg-secondary);
+}
+
+
+
+/* ----------------
+            10 Footer CSS style
+------------------------------------------------ */
+/* ----------- Footer area --------- */
+
+footer {
+    padding: 126px 0 76px;
+    background-color: var(--footer-bg);
+}
+
+#footer-title {
+    color: var(--bg-secondary);
+}
+
+#footer-description {
+    color: var(--bg-secondary);
+}
+
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-social ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.footer-social ul li a {
+    text-decoration: none;
+    
+}
+
+.footer-social ul li .fa-brands {
+    color: var(--bg-secondary);
+    text-align: center;
+    display: inline-block;
+    font-size: 19px;
+    padding: 15px 10px 10px;
+    height: 49px;
+    width: 49px;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+
+.footer-social ul li .fa-brands:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-secondary);
+    border: 1px solid var(--primary-color);
+}
+
+/* --------- The End ------- */
